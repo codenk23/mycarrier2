@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Convert Images to PDF, Compress & Convert JPG to PNG Online FREE | ImageProcessingTool</title> 
+    
+    <meta name="description" content="Free online tool to convert multiple JPG, PNG, and JPEG images into a single PDF document. Also compress images and convert formats quickly and easily. Set your page order!"> 
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="text-center py-4 bg-light">
+        <h1 class="display-4 text-primary fw-bold mb-3">
+            <i class="fa-solid fa-camera-retro me-2"></i>ImageProcessingTool
+        </h1>
+        <p class="lead text-secondary">Your all-in-one free online image processing solution.</p>
+    </header>
+
+    <main class="container py-5">
+
+        <nav class="nav nav-pills nav-fill mb-5" id="tool-nav">
+            <a class="nav-link active" data-tool="pdf-converter">Convert Images To PDF</a>
+            <a class="nav-link" data-tool="image-compressor">Compress Images</a>
+            <a class="nav-link" data-tool="format-converter">JPG to PNG Converter</a>
+        </nav>
+
+        <section id="pdf-converter" class="tool-content active-tool">
+            <h2 class="h4 fw-bold text-center mb-3 text-primary">Convert Images To PDF</h2> 
+            <p class="text-center text-muted mb-4">
+                Upload multiple images (JPG, PNG, JPEG) and instantly create a single, custom PDF document.
+            </p>
+            
+            <div class="card shadow-lg p-4">
+                <div class="file-upload-area text-center border-dashed p-5 mb-4" id="pdf-upload-area">
+                    <i class="fa-solid fa-cloud-arrow-up fa-3x text-secondary mb-3"></i>
+                    <p class="h5">Drag and drop images here, or <label for="pdf-file-input" class="text-primary-link">Click to Select Files</label></p>
+                    <input type="file" id="pdf-file-input" multiple accept="image/*" class="d-none">
+                </div>
+                
+                <div id="pdf-image-list" class="image-list mb-4">
+                    </div>
+
+                <div class="d-grid gap-2">
+                    <button id="convert-to-pdf-btn" class="btn btn-primary btn-lg" disabled>Convert to PDF</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="image-compressor" class="tool-content" style="display: none;">
+            <h2 class="h4 fw-bold text-center mb-3 text-primary">Compress Images (JPG, PNG)</h2> 
+            <p class="text-center text-muted mb-4">
+                Reduce the file size of your images without losing quality. Fast and efficient.
+            </p>
+            <div class="card shadow-lg p-4 text-center">
+                <p>Compression tool interface goes here.</p>
+            </div>
+        </section>
+
+        <section id="format-converter" class="tool-content" style="display: none;">
+            <h2 class="h4 fw-bold text-center mb-3 text-primary">JPG to PNG Converter</h2> 
+            <p class="text-center text-muted mb-4">
+                Quickly and reliably convert your JPEG/JPG files to PNG format, or vice-versa.
+            </p>
+            <div class="card shadow-lg p-4 text-center">
+                <p>Format conversion tool interface goes here.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-3 bg-light mt-5">
+        <p class="mb-0 text-muted">&copy; 2025 ImageProcessingTool | All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
